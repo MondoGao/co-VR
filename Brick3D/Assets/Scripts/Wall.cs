@@ -3,14 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Wall : MonoBehaviour {
+  public Rigidbody torch;
 
   // Use this for initialization
   void Start () {
     for (int y = 0; y < 5; y++) {
       for (int x = 0; x < 5; x++) {
-        GameObject cube = GameObject.CreatePrimitive(PrimitiveType.Cube);
-        cube.AddComponent<Rigidbody>();
-        cube.transform.position = new Vector3(x, y, x+y);
+        Instantiate(torch, new Vector3(x, y, x + y), Quaternion.identity);
       }
     } 
   }
