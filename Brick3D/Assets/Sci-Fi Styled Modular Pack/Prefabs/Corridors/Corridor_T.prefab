@@ -127,7 +127,6 @@ GameObject:
   - component: {fileID: 497272}
   - component: {fileID: 6570690}
   - component: {fileID: 20530126}
-  - component: {fileID: 114928479252635206}
   m_Layer: 0
   m_Name: floor_2 (3)
   m_TagString: Untagged
@@ -247,7 +246,6 @@ GameObject:
   - component: {fileID: 422090}
   - component: {fileID: 6538828}
   - component: {fileID: 20540734}
-  - component: {fileID: 114869453391714122}
   m_Layer: 0
   m_Name: floor_2
   m_TagString: Untagged
@@ -3249,29 +3247,3 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 165962}
   m_IsPrefabParent: 1
---- !u!114 &114869453391714122
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 127808}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 84a4f15a3179f1d4993aded11f4d0232, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  locked: 0
-  markerActive: 1
---- !u!114 &114928479252635206
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 118216}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 84a4f15a3179f1d4993aded11f4d0232, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  locked: 0
-  markerActive: 1
