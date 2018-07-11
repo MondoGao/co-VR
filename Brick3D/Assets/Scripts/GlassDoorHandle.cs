@@ -21,11 +21,14 @@ public class GlassDoorHandle : MonoBehaviour
             ControllerButtonHints.ShowTextHint(hand, EVRButtonId.k_EButton_SteamVR_Trigger, "关门");
 
         }
+        Debug.Log(Teleport.instance);
+        Teleport.instance.gameObject.SetActive(false);
     }
 
     private void OnHandHoverEnd(Hand hand)
     {
         ControllerButtonHints.HideTextHint(hand, EVRButtonId.k_EButton_SteamVR_Trigger);
+        Teleport.instance.gameObject.SetActive(true);
     }
 
     private void HandHoverUpdate(Hand hand)
