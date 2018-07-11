@@ -11,7 +11,16 @@ public class GlassDoorHandle : MonoBehaviour
     
     private void OnHandHoverBegin(Hand hand)
     {
-        ControllerButtonHints.ShowTextHint(hand, EVRButtonId.k_EButton_SteamVR_Trigger, "Open Door");
+        var statInfo = door.GetCurrentAnimatorStateInfo(0);
+        if (statInfo.IsName("glass_door_closed"))
+        {
+            ControllerButtonHints.ShowTextHint(hand, EVRButtonId.k_EButton_SteamVR_Trigger, "开门");
+        }
+        else if (statInfo.IsName("glass_door_opened"))
+        {
+            ControllerButtonHints.ShowTextHint(hand, EVRButtonId.k_EButton_SteamVR_Trigger, "关门");
+
+        }
     }
 
     private void OnHandHoverEnd(Hand hand)
