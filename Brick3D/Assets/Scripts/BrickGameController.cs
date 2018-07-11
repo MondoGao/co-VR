@@ -5,7 +5,9 @@ using UnityEngine.UI;
 
 public class BrickGameController : MonoBehaviour {
 
+    public GameObject brickGame;
     public Text textScore;
+
     private int score = 0;
 	// Use this for initialization
 	void Start () {
@@ -26,4 +28,9 @@ public class BrickGameController : MonoBehaviour {
 	void Update () {
         syncText();
 	}
+
+    private void OnStartGame()
+    {
+        brickGame.SetActive(true);
+    }
 }
